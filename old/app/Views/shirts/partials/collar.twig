@@ -1,0 +1,83 @@
+<header>
+    <div class="name">Boutons</div>
+    <div class="close">x</div>
+</header>
+
+<form>
+    <div class="select">
+        <select name="col">
+            <option value="Rigide">Rigide</option>
+            <option value="Souple">Souple</option>
+        </select>
+        <div class="select-custom">
+            <div class="selected-item"><span class="value">Col</span><img src="/img/icons/down.svg"/></div>
+            <ul></ul>
+        </div>
+    </div>
+    <div class="select">
+        <select name="baleine">
+            <option value="Avec">Avec</option>
+            <option value="Sans">Sans</option>
+            <option value="Amovibles">Amovibles</option>
+        </select>
+        <div class="select-custom">
+            <div class="selected-item"><span class="value">Baleine</span><img src="/img/icons/down.svg"/></div>
+            <ul></ul>
+        </div>
+    </div>
+</form>
+
+<h2>Cols 1 bouton</h2>
+
+<div class="parts">
+    {% for id in [['Classique','CLA'],['Italien','ITA'],['Italien rond','ITO'],['Italien ouvert','CTW'],['Cutaway','CTW'],['Boutonné','BOU'],['Dandy','DAN'],['Anglais','ANG'],['Napolitain','ACIG'],['Longues Pointes','TEN']] %}
+        <div  class="part {{ (loop.index0 == 0) ? 'active' : '' }}" data-category="collar" data-id="{{ id[1] }}"  data-label="{{ id[0] }}" >
+            <div class="img">
+                <img src="/img/pictos/col_{{id[1]}}.svg" width="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+<h2>Cols spéciaux</h2>
+
+<div class="parts">
+    {% for id in [['Mao','MAO'],['Maomao','MMO'],['Officier','OFR'],['Officier carré','OFC'],['Indien','REP'],['Inversé','INS'],['Cérémonie','CAS']] %}
+        <div class="part" data-category="collar" data-id="{{ id[1] }}"  data-label="{{ id[0] }}">
+            <div class="img">
+                <img src="/img/pictos/col_{{id[1]}}.svg" width="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+
+<h2>Minis cols</h2>
+
+<div class="parts">
+    {% for id in [['Mini boutonné','MBT'],['Mini classique','MCL'],['Mini rond','MRO'],['Mini inversé','INP']] %}
+        <div class="part" data-category="collar" data-id="{{ id[1] }}"  data-label="{{ id[0] }}" >
+            <div class="img">
+                <img src="/img/pictos/col_{{id[1]}}.svg" width="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+
+<h2>Cols 2 boutons</h2>
+
+<div class="parts">
+    {% for id in [['Boutonné 2 boutons','BOU'],['Italien ouvert 2 boutons','ITO'],['Napolitain 2 boutons','ACIG2']] %}
+        <div class="part" data-category="collar" data-id="{{ id[1] }}"  data-label="{{ id[0] }}" >
+            <div class="img">
+                <img src="/img/pictos/col_{{id[1]}}.svg" width="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>
+

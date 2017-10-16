@@ -1,0 +1,89 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule	^index.html$	index.php	[L]
+RewriteRule	^home$	index.php	[L]
+RewriteRule	^espace-client.html$	espace-client.php	[L]
+
+RewriteRule	^connexion.html$	connexion.php	[L]
+RewriteRule	^commande.html$	connexion.php?commande=oui	[L]
+RewriteRule	^deconnexion.html$	deconnexion.php	[L]
+RewriteRule	^mesure-chemise.html$	mesure-chemise.php	[L]
+RewriteRule	^espace-client.html$	espace-client.php	[L]
+RewriteRule	^catalogue-chemise.html$	catalogue-chemise.php	[L]
+RewriteRule	^catalogue-tissu.html$	catalogue-tissu.php	[L]
+RewriteRule	^tout-savoir.html$	tout-savoir.php	[L]
+RewriteRule	^avis-clients.html$	avis-clients.php	[L]
+RewriteRule	^service-entreprise.html$	b2b.php	[L]
+RewriteRule	^cadeau-chemise-sur-mesure.html$	offrez-chemise.php	[L]
+RewriteRule	^guide$	guide.php	[L]
+RewriteRule	^Aide-Nous-contacter$	contact.php	[L]
+RewriteRule	^motpasseoublie.html$	motpasseoublie.php	[L]
+RewriteRule	^nouveau-client.html$	nouveau-client.php	[L]
+
+RewriteRule	^mesure-rapide.html$	mesure-rapide.php	[L]
+RewriteRule	^mesurez-vous.html$	mesurez-vous.php	[L]
+
+RewriteRule	^nouveau-compte.html$	nouveau-compte.php	[L]
+RewriteRule	^notification.html$	notification.php	[L]
+
+RewriteRule	^notification-paiement.html$	notification.php?action=paiement	[L]
+
+
+RewriteRule	^paiement.html$	paiement.php	[L]
+RewriteRule	^paiement-succes.html$	paiement_action.php?t=success	[L]
+RewriteRule	^paiement-echec.html$	paiement_action.php?t=echec	[L]
+
+RewriteRule	^panier-1.html$	panier-step-1.php	[NC,L]
+RewriteRule	^panier-2.html$	panier-step-2.php	[NC,L]
+RewriteRule	^panier-2-deja-client.html$	panier-step-2-deja-client.php	[NC,L]
+RewriteRule	^panier-2-modif-mesure.html$	panier-step-2-modif-mesure.php	[NC,L]
+RewriteRule	^panier-2-new-mesure.html$	panier-step-2-new-mesure.php	[NC,L]
+RewriteRule	^panier-3.html$	panier-step-3.php	[NC,L]
+RewriteRule	^panier-4.html$	panier-step-4.php	[NC,L]
+
+RewriteRule	^panier-mesure-rapide.html$	panier-mesure-rapide.php	[NC,L]
+RewriteRule	^panier-mesurez-vous.html$	panier-mesurez-vous.php	[NC,L]
+RewriteRule	^panier-mesure-chemise.html$	panier-mesure-chemise.php	[NC,L]
+
+
+RewriteRule	^chemises/([A-Za-z0-9-]+).html?$	page-produit-chemise.php?alias=$1 [NC,L]
+
+RewriteRule	^chemise-col-mao$	catalogue-chemise.php?alias=chemise-col-mao	[L]
+RewriteRule	^chemise-col-italien$	catalogue-chemise.php?alias=chemise-col-italien	[L]
+RewriteRule	^chemise-col-officier$	catalogue-chemise.php?alias=chemise-col-officier	[L]
+RewriteRule	^chemise-col-casse$	catalogue-chemise.php?alias=chemise-col-casse	[L]
+RewriteRule	^chemise-col-inverse$	catalogue-chemise.php?alias=chemise-col-inverse	[L]
+RewriteRule	^chemise-col-anglais$	catalogue-chemise.php?alias=chemise-col-anglais	[L]
+
+RewriteRule	^chemise-tissus-blanc$	catalogue-chemise.php?alias=chemise-tissus-blanc	[L]
+RewriteRule	^chemise-tissus-noir$	catalogue-chemise.php?alias=chemise-tissus-noir	[L]
+RewriteRule	^chemise-tissus-bleu$	catalogue-chemise.php?alias=chemise-tissus-bleu	[L]
+RewriteRule	^chemise-tissus-rouge$	catalogue-chemise.php?alias=chemise-tissus-rouge	[L]
+RewriteRule	^chemise-tissus-rose$	catalogue-chemise.php?alias=chemise-tissus-rose	[L]
+
+RewriteRule	^chemisettes$	catalogue-chemise.php?alias=chemisettes	[L]
+RewriteRule	^chemise-fashion$	catalogue-chemise.php?alias=chemise-fashion	[L]
+RewriteRule	^chemise-bucherons$	catalogue-chemise.php?alias=chemise-bucherons	[L]
+RewriteRule	^chemise-grandes-tailles$	catalogue-chemise.php?alias=chemise-grandes-tailles	[L]
+RewriteRule	^chemise-cintrées$	catalogue-chemise.php?alias=chemise-cintrees	[L]
+RewriteRule	^chemise-sans-repassage$	catalogue-chemise.php?alias=chemise-sans-repassage	[L]
+
+RewriteRule	^chemise-tissus-unis$	catalogue-chemise.php?alias=chemise-tissus-unis	[L]
+RewriteRule	^chemise-tissus-carreaux$	catalogue-chemise.php?alias=chemise-tissus-carreaux	[L]
+RewriteRule	^chemise-tissus-rayes$	catalogue-chemise.php?alias=chemise-tissus-rayes	[L]
+RewriteRule	^chemise-tissus-fantaisies$	catalogue-chemise.php?alias=chemise-tissus-fantaisies	[L]
+RewriteRule	^chemise-tissus-ecossais$	catalogue-chemise.php?alias=chemise-tissus-ecossais	[L]
+
+
+RewriteRule	^chemise-tissus-popeline$	catalogue-chemise.php?alias=chemise-tissus-popeline	[L]
+RewriteRule	^chemise-tissus-oxford$	catalogue-chemise.php?alias=chemise-tissus-oxford	[L]
+RewriteRule	^chemise-tissus-flanelle$	catalogue-chemise.php?alias=chemise-tissus-flanelle	[L]
+RewriteRule	^chemise-tissus-lin$	catalogue-chemise.php?alias=chemise-tissus-lin	[L]
+RewriteRule	^chemise-tissus-twill$	catalogue-chemise.php?alias=chemise-tissus-twill	[L]
+RewriteRule	^chemise-tissus-chevron$	catalogue-chemise.php?alias=chemise-tissus-chevron	[L]
+
+RewriteRule	^prix-59-69$	catalogue-chemise.php?prix_debut=59&prix_fin=69	[L]
+RewriteRule	^prix-74-79$	catalogue-chemise.php?prix_debut=74&prix_fin=79	[L]
+RewriteRule	^prix-89-99$	catalogue-chemise.php?prix_debut=89&prix_fin=99	[L]
+RewriteRule	^prix-109$	catalogue-chemise.php?prix_debut=109&prix_fin=999	[L]
+

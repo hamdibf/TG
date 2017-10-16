@@ -1,0 +1,89 @@
+<!-- MENU LATERAL-->
+<div class="container-fluid menu-lateral-container" id="menu-lateral-container">
+    <div class="menu-lateral" id="menu-lateral">
+        <div class="menu-top">
+            <div class="menu-top-titre-croix">
+                <p class="titre-content oswald-regular">Menu</p>
+                <div class="icon-croix" onclick="openMenulateral()">
+                    <span></span>
+                </div>
+            </div>
+            <p class="menu-top-welcome">Bonjour visiteur, accédez à <a class="dinpro-medium" href="{{ path_for('users_login') }}">votre compte</a></p>
+            <div class="menu-bot">
+                <ul class="menu-categorie dinpro-medium">
+                    <li><a href="{{ path_for('shirts_configurator') }}">Créez votre chemise de A à Z</a></li>
+                    <li><a href="{{ path_for('shirts_index') }}">Catalogue chemises</a></li>
+                    <li><a href="{{ path_for('fabrics_index') }}">Catalogue tissus</a></li>
+                    <li><a href="">Tout savoir pour ma commande</a></li>
+                    <li><a href="{{ path_for('users_testimonies') }}">Ce que pensent nos clients</a></li>
+                </ul>
+                <ul class="menu-categorie dinpro-medium">
+                    <li>
+                        <span><a href="#" onclick="openLiensguide()">Guide<img src="img/icon-fleche-menu-deroulant.svg" alt=""></a></span>
+                        <ul class="guide-menu-deroulant dinpro-regular" id="liens-guide">
+                            <li><a href="">Exemple d'un lien de catégorie à la con, genre vraiment con...</a></li>
+                            <li><a href="">Exemple d'un lien de catégorie à la con, genre vraiment con...</a></li>
+                            <li><a href="">Exemple d'un lien de catégorie à la con, genre vraiment con...</a></li>
+                            <li><a href="">Exemple d'un lien de catégorie à la con, genre vraiment con...</a></li>
+                            <li><a href="">Voir tous les articles</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu-categorie dinpro-medium">
+                    <li><a href="">B2B</a></li>
+                </ul>
+                <ul class="menu-categorie dinpro-medium">
+                    <li><a href="">Offrez une chemise George</a></li>
+                </ul>
+                <ul class="menu-categorie dinpro-medium">
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-footer">
+            <div class="contact-rapide">
+                <p>Contactez George à<span>george@tailorgeorge.fr</span></p>
+            </div>
+            <div class="choix-langue">
+                <span>Langue du site:</span>
+                <img class="drapeau-langue" src="img/flag-fr.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NAVIGATION MOBILE/FIXE -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="navigation-fixe">
+                <!-- BURGER MENU -->
+                <div class="burger-menu" onclick="openMenulateral()">
+                    <span class="icon-burger"></span>
+                    <span class="hide-text oswald-regular">menu</span>
+                </div>
+                <!-- LOGO -->
+                <div class="logo-container">
+                    <a class="logo" href="{{ path_for('pages_index') }}"><img src="/img/logo.svg" alt="Tailor George logo"></a>
+                    <img src="/img/flag-fr.png" alt="">
+                </div>
+                <!-- RIGHT NAVIGATION -->
+                <div class="right-navigation">
+                    <!-- BTN COMPTE
+                    <div class="compte-btn">
+                        <img class="compte-btn-img" src="img/icon-mon-compte.svg" alt="">
+                        <span class="hide-text oswald-regular">compte</span>
+                    </div>
+                    -->
+                    <a class="panier-btn" href="{{ path_for('orders_index') }}">
+                        <img class="panier-btn-img" src="/img/icon-panier.svg" alt="">
+                        <span class="hide-text oswald-regular">panier</span>
+                    </a>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,136 @@
+{% extends "assets/layout.twig" %}
+
+{% block content %}
+
+    <!-- HEADER CONNEXION -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header-page bgk-connexion">
+                    <p class="fil-arianne oswald-regular"><a href="index.php">accueil</a> / <a href="nouveau-client.php">Type de mesure</a> /</p>
+                    <h1 class="fil-arianne-activ oswald-regular">Mesures rapides</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MESURE RAPIDE -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- FORMULAIRE MESURE RAPIDE -->
+                <form action="">
+                    <!-- AGE / TAILLE / POIDS -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="methode-mesure methode-small">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Aide au calibrage</h2>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <!-- AGE -->
+                                        <div class="input-group">
+                                            <label class="label" for="age">Age</label>
+                                            <input class="input" type="text" name="age" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <!-- TAILLE -->
+                                        <div class="input-group">
+                                            <label class="label" for="taille">Taille (cm)</label>
+                                            <input class="input" type="text" name="taille" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <!-- POIDS -->
+                                        <div class="input-group no-margin-bottom">
+                                            <label class="label" for="age">Poids (kg)</label>
+                                            <input class="input" type="text" name="age" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MESURE RAPIDE -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Choisissez votre taille de chemise</h2>
+                                <div class="methode-mesure-img mesure-rapide-taille"></div>
+                                <select class="select-mesure" name="mesure-rapide-taille" id="">
+                                    <option value="XS">37 - (XS) - 14,5</option>
+                                    <option value="S">38 - (S) - 14,5</option>
+                                    <option value="S+">39 - (S+) - 14,5</option>
+                                    <option value="M">40 - (M) - 14,5</option>
+                                    <option value="M+">41 - (M+) - 14,5</option>
+                                    <option value="L">42 - (L) - 14,5</option>
+                                    <option value="L+">43 - (L+) - 14,5</option>
+                                    <option value="XL">44 - (XL) - 14,5</option>
+                                    <option value="XL+">45 - (XL+) - 14,5</option>
+                                    <option value="XXL">46 - (XXL) - 14,5</option>
+                                    <option value="XXL+">47 - (XXL+) - 14,5</option>
+                                    <option value="XXXl">48 - (XXXL) - 14,5</option>
+                                </select>
+                                <p class="mesure-conseil">(Choisissez la taille qui vous va le mieux au niveau du corps)</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Ajustez votre encolure</h2>
+                                <div class="methode-mesure-img mesure-rapide-col"></div>
+                                <select class="select-mesure" name="mesure-rapide-col" id="">
+                                    <option value="37">37 cm</option>
+                                    <option value="38">38 cm</option>
+                                    <option value="39">39 cm</option>
+                                    <option value="40">40 cm</option>
+                                    <option value="41">41 cm</option>
+                                    <option value="42">42 cm</option>
+                                    <option value="43">43 cm</option>
+                                    <option value="44">44 cm</option>
+                                    <option value="45">45 cm</option>
+                                    <option value="46">46 cm</option>
+                                    <option value="47">47 cm</option>
+                                    <option value="48">48 cm</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Ajustez la longueur de vos manches</h2>
+                                <div class="methode-mesure-img mesure-rapide-bras"></div>
+                                <select class="select-mesure" name="mesure-rapide-bras" id="">
+                                    <option value="extracourte">Manches extra-courtes (-4 cm)</option>
+                                    <option value="courte">Manches plus courtes (-2 cm)</option>
+                                    <option value="standard" selected="selected">Manches standards</option>
+                                    <option value="longue">Manches plus longues (+2 cm)</option>
+                                    <option value="extralongue">Manches extra-longues (+4 cm)</option>
+                                </select>
+                                <p class="mesure-conseil">Longueur standard = 64 cm</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Choisissez la coupe de votre chemise</h2>
+                                <div class="methode-mesure-img aisance-coupe"></div>
+                                <select class="select-mesure" name="aisance-coupe" id="">
+                                    <option value="droit">Droite</option>
+                                    <option value="cintre">Cintrée</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ENREGISTRER MESURE-RAPIDE -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="submit-container">
+                                <input class="btn-rose" type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

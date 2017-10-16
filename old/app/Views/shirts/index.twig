@@ -1,0 +1,281 @@
+{% extends "assets/layout.twig" %}
+
+{% block content %}
+
+    <!-- HEADER CATALOGUE -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header-page bgk-catalogue-chemise">
+                    <p class="fil-arianne oswald-regular"><a href="index.php">accueil</a> / catalogue /</p>
+                    <h1 class="fil-arianne-activ oswald-regular">Chemises sur mesure pour homme</h1>
+                    <p class="modele-find">3154 modèles</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FILTRES CATALOGUE -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="filtres-catalogue-container">
+                    <p class="filtres-catalogue-mobile oswald-regular" onclick="openFiltres()"><span id="span-afficher">Afficher les filtres</span><span class="masquer-span" id="span-masquer">Masquer les filtres</span></p>
+                    <ul class="filtres-catalogue oswald-regular" id="filtres-catalogue">
+                        <li>
+                            <span>Couleurs</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li class="couleur-blanc">Blanc</li>
+                                <li class="couleur-noir">Noir</li>
+                                <li class="couleur-bleu">Bleu</li>
+                                <li class="couleur-rouge">Rouge</li>
+                                <li class="couleur-rose">Rose</li>
+                                <li class="couleur-marron">Marron</li>
+                                <li class="couleur-vert">Vert</li>
+                                <li class="couleur-gris">Gris</li>
+                                <li class="couleur-violet">Violet</li>
+                                <li class="couleur-jaune">Jaune</li>
+                                <li class="couleur-orange">Orange</li>
+                                <li class="couleur-beige">Beige</li>
+                                <li class="couleur-toutes">Toutes les couleurs</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Cols</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li>Mao</li>
+                                <li>Italien</li>
+                                <li>Officier</li>
+                                <li>Cassé</li>
+                                <li>Inversé</li>
+                                <li>Anglais</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Style</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li>Chemisette</li>
+                                <li>Fashion</li>
+                                <li>Bucheron / Hipster</li>
+                                <li>Grande taille</li>
+                                <li>Cintrée</li>
+                                <li>Infroissable</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Tissage</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li>Popeline</li>
+                                <li>Oxford</li>
+                                <li>Flanelle</li>
+                                <li>Lin</li>
+                                <li>Twill</li>
+                                <li>Chevron</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Motifs</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li>Uni</li>
+                                <li>Carreaux</li>
+                                <li>Rayures</li>
+                                <li>Liberty / Imprimés</li>
+                                <li>Écossais / Tartans</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Prix</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li>Prix de 59 € à 69 €</li>
+                                <li>Prix de 74 € à 79 €</li>
+                                <li>Prix de 89 € à 99 €</li>
+                                <li>Prix à 109 €</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CATALOGUE CHEMISE -->
+    <div class="container catalogue">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--  BANDEAU TEXTE CHEMISE UNE FOIS UN FILTRE CHOISI  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="border-motif">
+                    <p class="border-motif-texte">Dans notre sélection de tissus verts, vous trouverez beaucoup de carreaux types tartans pour une chemise homme verte très casual. Mais aussi des tissus kakis unis, toujours très appréciés, pour vous confectionner une chemise vert-kaki sur mesure dans un style très baroudeur avec double poches et épaulettes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CATALOGUE CHEMISE -->
+    <div class="container catalogue">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
+                <a href="page-produit-chemise.php">
+                    <div class="chemise-catalogue">
+                        <div class="chemise-catalogue-photo">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="Chemise sur mesure TailorGeorge">
+                        </div>
+                        <div class="catalogue-details">
+                            <p class="modele-catalogue">Chemise en popeline<br>Fil à fil bleu uni</p>
+                            <p class="prix-catalogue oswald-bold">79€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}

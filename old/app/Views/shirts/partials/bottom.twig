@@ -1,0 +1,34 @@
+<header>
+    <div class="name">Bas</div>
+    <div class="close">x</div>
+</header>
+
+<h2 class="first">
+    Bas de chemise
+</h2>
+
+<div class="parts">
+    {% for id in [['Arrondi','L'],['Droit','D'],['Droit avec fentes', 'F']] %}
+        <div  class="part {{ (loop.index0 == 0) ? 'active' : '' }}" data-category="bottom" data-id="{{ id[1] }}"  data-label="{{ id[0] }}" >
+            <div class="img">
+                <img src="/img/pictos/bas_{{id[1]}}.svg" width="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+<h2 class="first">
+    Gorge
+</h2>
+
+<div class="parts">
+    {% for id in [['Simple','S'],['Américaine','A'],['Cachée', 'C']] %}
+        <div class="part {{ (loop.index0 == 0) ? 'active' : '' }}" data-category="throat" data-id="{{ id[1] }}"  data-label="{{ id[0] }}" >
+            <div class="img">
+                <img src="/img/pictos/gorge_{{id[1]}}.svg" width="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>

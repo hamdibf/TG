@@ -1,0 +1,38 @@
+<header>
+    <div class="name">Boutons</div>
+    <div class="close">x</div>
+</header>
+
+<h2 class="first">
+    Boutons
+</h2>
+
+<div class="parts">
+    {% for id in [['Ton sur ton','ton_sur_ton'],['Anthracite','anthracite'],['Blanc épais','blanc_epais'],['Bleu ciel','bleu_ciel'],['Bleu foncé','bleu_fonce'],['Bleu gris','bleu_gris'],['Brun épais','brun_epais'],['Corne clair','corne_clair'],['Corne foncé','corne_fonce'],['Jaune','jaune'],['Nacre','nacre'],['Noir','noir'],['Noir épais','noir_epais'],['Rouge','rouge'],['Vert','vert']] %}
+        <div class="part {{ (loop.index0 == 0) ? 'active' : '' }}" data-category="buttons" data-id="{{ id[1] }}"
+             data-label="{{ id[0] }}">
+            <div class="img">
+                <img src="/img/pictos/boutons_{{ id[1] }}.png" width="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+
+<h2 class="first">
+    Boutonnières
+</h2>
+
+<div class="parts">
+    {% for id in [['ton sur ton','ton_sur_ton'],['beige','beige'],['blanc mat','blanc_mat'],['bleu clair','bleu_clair'],['bleu marine','bleu_marine'],['bleu roi','bleu_roi'],['bordeaux','bordeaux'],['gris','gris'],['jaune pale','jaune_pale'],['jaune vif','jaune_vif'],['mauve','mauve'],['noir','noir'],['orange','orange'],['rose pale','rose_pale'],['rose vif','rose_vif'],['rouge','rouge'],['vert foncé','vert_fonce'],['vert pomme','vert_pomme'],['vert vif','vert_vif'],['violet','violet']] %}
+        <div class="part {{ (loop.index0 == 0) ? 'active' : '' }}" data-category="buttonholes" data-id="{{ id[1] }}"
+             data-label="{{ id[0] }}">
+            <div class="img">
+                <img src="/img/pictos/boutonnieres_{{ id[1] }}.svg" height="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>
+

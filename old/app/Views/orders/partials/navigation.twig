@@ -1,0 +1,13 @@
+<!-- HEADER PANIER -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="header-panier">
+                <li><a class="header-panier-lien {{ (page == 'index')?'lien-actif':'' }}" href="{{ path_for('orders_index') }}">1. Panier</a></li>
+                <li><a class="header-panier-lien {{ (page == 'measures')?'lien-actif':'' }}" href="{{ path_for('orders_measures') }}">2. Mesures</a></li>
+                <li><a class="header-panier-lien {{ (page == 'address')?'lien-actif':'' }}" href="{{ path_for('orders_address') }}">3. Coordonnées</a></li>
+                <li><a class="header-panier-lien {{ (page == 'payment')?'lien-actif':'' }}" href="{{ path_for('orders_payment') }}">4. Récapitulatif & Paiement</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

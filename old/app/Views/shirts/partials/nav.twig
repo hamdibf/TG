@@ -1,0 +1,10 @@
+<button class="back hidden"><img src="/img/icons/back.svg" height="15"/></button>
+<nav class="hidden">
+    <ul>
+        {% for id in ['tissus', 'cols', 'poignets', 'poches', 'bas', 'dos', 'boutons', 'broderies', 'doublures'] %}
+            <li data-id="{{ loop.index  }}" class="item-{{ loop.index }} {{ (loop.index0 ==0) ? 'active' : '' }}">
+                <div class="img"></div>{{ id }}
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

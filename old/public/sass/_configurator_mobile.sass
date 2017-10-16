@@ -1,0 +1,128 @@
+@media all and (max-width: $breakSize)
+  body
+    display: inherit
+
+  section#configurator
+    position: fixed
+    bottom: 0
+    height: 100px
+    width: 100%
+
+
+    .parts .part
+      width: 100%
+      border: 1px solid $menuItemBorder
+      display: flex
+      cursor: pointer
+      align-items: center
+      margin-left: 10px
+
+      .img
+        border: none
+        background: $partBgk
+        height: inherit
+        width: 60px
+        margin-bottom: 0
+
+        img
+          height: 50px
+
+      &.active
+
+        border: 1px solid $active
+
+        .img
+          background: $active
+
+      .name
+        padding-left: 10px
+
+    .content
+      margin-top: 0
+
+    #step-0
+      display: flex
+      height: 95px
+      position: fixed
+      top: inherit
+      background: transparent
+      bottom: inherit
+      overflow: auto
+      width: 100%
+
+      .parts
+        justify-content: flex-start
+        height: 90px
+        min-width: 100%
+        display: flex
+        overflow: auto
+        flex-wrap: nowrap
+        padding: 10px 10px 0 10px
+
+      .part
+        min-height: 80px
+        min-width: 70px
+        width: 80px
+        display: block
+        +font-size(11)
+        background: white
+        text-align: center
+        border: 1px solid $menuItemBorder
+        overflow: hidden
+        text-wrap: none
+        cursor: pointer
+
+        .img
+          width: 70px
+          height: inherit
+          border: none
+          background: none
+          margin-bottom: 10px
+
+        .name
+          text-overflow: ellipsis
+          padding-left: 0
+
+        img
+          height: 40px
+          width: 100%
+          opacity: 1
+
+      h2
+        display: none
+
+
+    .parts
+      justify-content: space-around
+
+    footer, button.back
+      display: none
+
+
+    nav
+      display: none
+
+    .step
+      background: white
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100vh
+      overflow: auto
+
+      .close
+        font-size: 25px
+        cursor: pointer
+
+      strong
+        display: none
+
+      header
+        height: 60px
+        display: flex
+        background: $stepHeader
+        padding: 0 10px
+        align-items: center
+        justify-content: space-between
+        border-bottom: 2px solid $stepHeaderShadow

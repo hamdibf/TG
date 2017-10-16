@@ -1,0 +1,58 @@
+<header>
+    <div class="name">Poches</div>
+    <div class="close">x</div>
+</header>
+
+<h2 class="first">
+    Poignets ronds
+</h2>
+
+<div class="parts">
+    {% for id in [['1 bouton','A11'],['2 boutons','A22'],['Ajustable','A12']] %}
+        <div  class="part {{ (loop.index0 == 0) ? 'active' : '' }}" data-category="wrists" data-id="{{ id[1] }}"  data-label="{{ id[0] }}" >
+            <div class="img">
+                <img src="/img/pictos/poignet_{{id[1]}}.svg" width="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+<h2 >
+    Poignets biais
+</h2>
+
+<div class="parts">
+    {% for id in [['1 bouton','B11'],['2 boutons','B22'],['Ajustable','B12']] %}
+        <div   class="part " data-category="wrists" data-id="{{ id[1] }}"  data-label="{{ id[0] }}" >
+            <div class="img">
+                <img src="/img/pictos/poignet_{{id[1]}}.svg" width="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+<h2 >
+    Poignets mousquetaires
+</h2>
+
+<div class="parts">
+    {% for id in [['Rond','PMR'],['Carré','PMC'],['Portofino','N22']] %}
+        <div   class="part " data-category="wrists" data-id="{{ id[1] }}"  data-label="{{ id[0] }}" >
+            <div class="img">
+                <img src="/img/pictos/poignet_{{id[1]}}.svg" width="85">
+            </div>
+            <div class="name">{{ id[0] }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+<h2 >
+    Manches courtes
+</h2>
+
+<div data-category="wrists" data-label="Manches courtes" data-id="MC" class="part">
+    <div class="img"><img src="/img/pictos/poignet_MC.svg" width="85"/></div>
+    <div class="name">Manches courtes</div>
+</div>

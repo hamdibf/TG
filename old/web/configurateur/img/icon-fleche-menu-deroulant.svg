@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #243455;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="flèche_copie_7" data-name="flèche copie 7" class="cls-1" d="M1262.5,423a0.157,0.157,0,0,1-.11-0.047l-4.35-4.688a0.158,0.158,0,0,1,.01-0.221,0.143,0.143,0,0,1,.21,0l4.24,4.571,4.24-4.571a0.143,0.143,0,0,1,.21,0,0.158,0.158,0,0,1,.01.221l-4.35,4.688A0.157,0.157,0,0,1,1262.5,423Z" transform="translate(-1258 -418)"/>
+</svg>

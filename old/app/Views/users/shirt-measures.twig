@@ -1,0 +1,159 @@
+{% extends "assets/layout.twig" %}
+
+{% block content %}
+
+
+    <!-- HEADER CONNEXION -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header-page bgk-connexion">
+                    <p class="fil-arianne oswald-regular"><a href="index.php">accueil</a> / <a href="nouveau-client.php">Type de mesure</a> /</p>
+                    <h1 class="fil-arianne-activ oswald-regular">Mesures sur chemise</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MESURE CHEMISE -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- FORMULAIRE MESURE SUR CHEMISE -->
+                <form action="">
+                    <!-- AGE / TAILLE / POIDS -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="methode-mesure methode-small">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Aide au calibrage</h2>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <!-- AGE -->
+                                        <div class="input-group">
+                                            <label class="label" for="age">Age</label>
+                                            <input class="input" type="text" name="age" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <!-- TAILLE -->
+                                        <div class="input-group">
+                                            <label class="label" for="taille">Taille (cm)</label>
+                                            <input class="input" type="text" name="taille" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <!-- POIDS -->
+                                        <div class="input-group no-margin-bottom">
+                                            <label class="label" for="age">Poids (kg)</label>
+                                            <input class="input" type="text" name="age" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MESURE RAPIDE -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Col</h2>
+                                <div class="methode-mesure-img mesure-chemise-col"></div>
+                                <div class="input-group">
+                                    <label class="label" for="col">Col (cm)</label>
+                                    <input class="input" type="text" name="col" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                </div>
+                                <p class="mesure-conseil">Mesurez depuis le centre du bouton, jusqu'au centre de la boutonnière, le col étant à plat.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Poignet</h2>
+                                <div class="methode-mesure-img mesure-chemise-poignet"></div>
+                                <div class="input-group">
+                                    <label class="label" for="poignet">Poignet (cm)</label>
+                                    <input class="input" type="text" name="poignet" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                </div>
+                                <p class="mesure-conseil">Mesurez d'un bord à l'autre, le poignet étant bien à plat.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Manche</h2>
+                                <div class="methode-mesure-img mesure-chemise-manche"></div>
+                                <div class="input-group">
+                                    <label class="label" for="manche">Manche (cm)</label>
+                                    <input class="input" type="text" name="manche" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                </div>
+                                <p class="mesure-conseil">Mesurez depuis la couture de l'épaule jusqu'au bout du poignet.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Demi-poitrine</h2>
+                                <div class="methode-mesure-img mesure-chemise-demi-poitrine"></div>
+                                <div class="input-group">
+                                    <label class="label" for="demi-poitrine">Demi-poitrine (cm)</label>
+                                    <input class="input" type="text" name="demi-poitrine" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                </div>
+                                <p class="mesure-conseil">Mesurez depuis la couture gauche jusqu'à la couture droite, juste en-dessous des manches.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Demi-taille</h2>
+                                <div class="methode-mesure-img mesure-chemise-demi-taille"></div>
+                                <div class="input-group">
+                                    <label class="label" for="demi-taille">Demi-taille (cm)</label>
+                                    <input class="input" type="text" name="demi-taille" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                </div>
+                                <p class="mesure-conseil">Mesurez depuis la couture gauche jusqu'à la couture droite, au niveau de la taille.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Dos</h2>
+                                <div class="methode-mesure-img mesure-chemise-dos"></div>
+                                <div class="input-group">
+                                    <label class="label" for="dos">Dos (cm)</label>
+                                    <input class="input" type="text" name="dos" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                </div>
+                                <p class="mesure-conseil">Mesurez depuis la couture du col, jusqu'au bas de la chemise.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Carrure</h2>
+                                <div class="methode-mesure-img mesure-chemise-carrure"></div>
+                                <div class="input-group">
+                                    <label class="label" for="carrure">Carrure (cm)</label>
+                                    <input class="input" type="text" name="carrure" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                </div>
+                                <p class="mesure-conseil">Mesurez d'un bord de l'épaule à l'autre.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="methode-mesure-rapide">
+                                <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Épaule</h2>
+                                <div class="methode-mesure-img mesure-chemise-epaule"></div>
+                                <div class="input-group">
+                                    <label class="label" for="epaule">Épaule (cm)</label>
+                                    <input class="input" type="text" name="epaule" onfocus="activLabel(this)" onblur="activLabel(this)">
+                                </div>
+                                <p class="mesure-conseil">Mesurez depuis la base du cou jusqu'à la pointe de l'épaule.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ENREGISTRER MESURE-RAPIDE -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="submit-container">
+                                <input class="btn-rose" type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

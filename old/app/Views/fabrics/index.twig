@@ -1,0 +1,125 @@
+{% extends "assets/layout.twig" %}
+
+{% block content %}
+
+
+    <!-- HEADER CATALOGUE -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header-page bgk-catalogue-chemise">
+                    <p class="fil-arianne oswald-regular"><a href="{{ path_for('pages_index') }}">accueil</a> /
+                        catalogue /</p>
+                    <h1 class="fil-arianne-activ oswald-regular">Catalogue de tissus</h1>
+                    <p class="modele-find"><span>{{ count }}</span> modèles</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FILTRES CATALOGUE -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="filtres-catalogue-container">
+                    <p class="filtres-catalogue-mobile oswald-regular" onclick="openFiltres()"><span id="span-afficher">Afficher les filtres</span><span
+                                class="masquer-span" id="span-masquer">Masquer les filtres</span></p>
+                    <ul class="filtres-catalogue oswald-regular" id="filtres-catalogue">
+                        <li class="color-choice">
+                            <span>Couleurs</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li class="couleur-toutes selected" data-value="all">Toutes les couleurs</li>
+                                <li class="couleur-blanc" data-value="blanc">Blanc</li>
+                                <li class="couleur-noir" data-value="noir">Noir</li>
+                                <li class="couleur-bleu" data-value="bleu">Bleu</li>
+                                <li class="couleur-rouge" data-value="rouge">Rouge</li>
+                                <li class="couleur-rose" data-value="rose">Rose</li>
+                                <li class="couleur-marron" data-value="marron">Marron</li>
+                                <li class="couleur-vert" data-value="vert">Vert</li>
+                                <li class="couleur-gris" data-value="gris">Gris</li>
+                                <li class="couleur-violet" data-value="violet">Violet</li>
+                                <li class="couleur-jaune" data-value="jaune">Jaune</li>
+                                <li class="couleur-orange" data-value="orange">Orange</li>
+                                <li class="couleur-beige" data-value="beige">Beige</li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <span>Style</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li>Tous les styles</li>
+                                <li>Chemisette</li>
+                                <li>Fashion</li>
+                                <li>Bucheron / Hipster</li>
+                                <li>Grande taille</li>
+                                <li>Cintrée</li>
+                                <li>Infroissable</li>
+                            </ul>
+                        </li>-->
+                        <li class="weaving-choice">
+                            <span>Tissage</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li data-value="all" class="selected">Tous les tissages</li>
+                                <li data-value="popeline">Popeline</li>
+                                <li data-value="oxfort">Oxford</li>
+                                <li data-value="flanelle">Flanelle</li>
+                                <li data-value="lin">Lin</li>
+                                <li data-value="twill">Twill</li>
+                                <li data-value="chevron">Chevron</li>
+                            </ul>
+                        </li>
+                        <li class="pattern-choice">
+                            <span>Motifs</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li data-value="all" class="selected">Tous les motifs</li>
+                                <li data-value="uni">Uni</li>
+                                <li data-value="carreaux">Carreaux</li>
+                                <li data-value="rayures">Rayures</li>
+                                <li data-value="imprime">Liberty / Imprimés</li>
+                                <li data-value="ecossais">Écossais / Tartans</li>
+                            </ul>
+                        </li>
+                        <!--<li class="price-choice">
+                            <span>Prix</span>
+                            <ul class="filtre-menu-deroulant dinpro-regular">
+                                <li>Prix de 59 € à 69 €</li>
+                                <li>Prix de 74 € à 79 €</li>
+                                <li>Prix de 89 € à 99 €</li>
+                                <li>Prix à 109 €</li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CATALOGUE CHEMISE -->
+    <div class="container catalogue">
+        <div class="row">
+
+            {% for shirt in fabrics %}
+
+                {% if(shirt.dispo == 1) %}
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 fabric-item" data-color="{{ shirt.couleur }}"
+                         data-weaving="{{ shirt.tissage}}" data-pattern="{{ shirt.dessin}}" >
+                        <div class="tissu-catalogue">
+                            <div class="tissu-catalogue-photo">
+                                <img src="http://www.ls-chemise.com/tissu/150/{{ shirt.code }}.jpg"
+                                     alt="Chemise sur mesure TailorGeorge" width="100%" height="100%">
+                            </div>
+                            <div class="catalogue-details">
+                                <p class="modele-catalogue">{{ shirt.reference }}<br>{{ shirt.construction }}</p>
+                                <p class="prix-catalogue oswald-bold">{{ shirt.prix }}€</p>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+    </div>
+
+{% endblock content %}

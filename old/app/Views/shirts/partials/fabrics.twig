@@ -1,0 +1,43 @@
+<header>
+    <div class="name">Tissus</div>
+    <div class="close">x</div>
+</header>
+<form>
+    <div class="select first">
+        <select name="couleur">
+            <option value="">tous</option>
+            {% for id in  ['blanc', 'beige','gris','noir','bleu','marron','vert','rouge','rose','violet','orange','jaune']  %}
+                <option value="{{ id }}">{{ id }}</option>
+            {% endfor %}
+        </select>
+        <div class="select-custom">
+            <div class="selected-item"><span class="value">Couleur</span><img src="img/icons/down.svg"/></div>
+            <ul></ul>
+        </div>
+    </div>
+    <div class="select">
+        <select name="motif">
+            <option value="">tous</option>
+            {% for id in ['unis', 'rayes','carreaux','ecossais','faitaisies','best'] %}
+                <option value="{{ id }}">{{ id }}</option>
+            {% endfor %}
+        </select>
+        <div class="select-custom">
+            <div class="selected-item"><span class="value">Motif</span><img src="img/icons/down.svg"/></div>
+            <ul></ul>
+        </div>
+    </div>
+    <div class="select last">
+        <select name="tissage">
+            <option value="">tous</option>
+            {% for id in ['popeline','oxford','flanelle','lin','twill','chevron'] %}
+                <option value="{{ id }}">{{ id }}</option>
+            {% endfor %}
+        </select>
+        <div class="select-custom">
+            <div class="selected-item"><span class="value">Tissage</span><img src="img/icons/down.svg"/></div>
+            <ul></ul>
+        </div>
+    </div>
+</form><strong id="fabric-number"><span></span> tissus</strong>
+<section id="fabrics-container"></section>

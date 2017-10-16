@@ -1,0 +1,75 @@
+{% extends "assets/layout_configurator.twig" %}
+
+{% block content %}
+    <section id="shirt">
+        <header>
+            <img src="/img/icons/menu.svg" width="20" class="menu"/>
+            <div class="logo">TG</div>
+            <button class="buy"><img src="/img/icons/cart.svg" width="20"/></button>
+            <div class="price">79€</div>
+            <div class="delivery">Livraison gratuite</div>
+        </header>
+        <div id="shirt-container">
+            <div class="base"><img/></div>
+            <div class="collar"><img/></div>
+            <div class="wrists"><img/></div>
+            <div class="pockets"><img/></div>
+            <div class="epaulettes"><img/></div>
+
+            <div class="buttonholes_bases"><img/></div>
+            <div class="buttonholes_wrists"><img/></div>
+            <div class="buttonholes_epaulettes"><img/></div>
+
+            <div class="buttons_throat"><img/></div>
+            <div class="buttons_wrists"><img/></div>
+            <div class="buttons_epaulettes"><img/></div>
+        </div>
+        <footer>
+            <a href="{{ path_for('pages_index') }}">
+                <img src="/img/icons/menu.svg" width="20" class="menu"/>
+                <img src="/img/icons/logo.svg"/>
+            </a>
+        </footer>
+
+    </section>
+
+    <section id="configurator">
+        {% include "shirts/partials/nav.twig" %}
+        <button class="back hidden"><img src="/img/icons/back.svg" height="15"></button>
+        <div class="content">
+            <section id="step-0" class="step">
+                {% include "shirts/partials/summary.twig" %}
+            </section>
+            <section id="step-1" class="hidden step">
+                {% include "shirts/partials/fabrics.twig" %}
+            </section>
+            <section id="step-2" class="hidden step">
+                {% include "shirts/partials/collar.twig" %}
+            </section>
+            <section id="step-3" class="hidden step">
+                {% include "shirts/partials/wrists.twig" %}
+            </section>
+            <section id="step-4" class="hidden step">
+                {% include "shirts/partials/pockets.twig" %}
+            </section>
+            <section id="step-5" class="hidden step">
+                {% include "shirts/partials/bottom.twig" %}
+            </section>
+            <section id="step-6" class="hidden step">
+                {% include "shirts/partials/back.twig" %}
+            </section>
+            <section id="step-7" class="hidden step">
+                {% include "shirts/partials/buttons.twig" %}
+            </section>
+            <section id="step-8" class="hidden step">
+                {% include "shirts/partials/embroidery.twig" %}
+            </section>
+            <section id="step-9" class="hidden step">
+                {% include "shirts/partials/lining.twig" %}
+            </section>
+        </div>
+        <footer>
+            <button>Ajouter au panier</button>
+        </footer>
+    </section>
+{% endblock content %}

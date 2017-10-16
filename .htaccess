@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^(.*)\.html$ $1.php [nc]
+RewriteRule temp/(.*) temp.php?reference=$1

@@ -1,0 +1,60 @@
+{% extends "assets/layout.twig" %}
+
+{% block content %}
+
+  {% include "orders/partials/navigation.twig" %}
+
+    <!--  PANIER  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <div class="panier-container">
+                    <div class="article-panier">
+                        <div class="photo-article-panier">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="">
+                        </div>
+                        <div class="description-article-panier">
+                            <div class="description-top">
+                                <p class="nom-article-panier">Chemise à carreaux bleus en popeline</p>
+                                <p class="prix-article-panier oswald-bold">79€</p>
+                            </div>
+                            <div class="description-bottom">
+                                <p class="option-article">Voir le détail</p>
+                                <p class="option-article option-supprimer">Supprimer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-panier">
+                        <div class="photo-article-panier">
+                            <img src="img/photo-chemise-catalogue.jpg" alt="">
+                        </div>
+                        <div class="description-article-panier">
+                            <div class="description-top">
+                                <p class="nom-article-panier">Chemise à carreaux bleus en coton</p>
+                                <p class="prix-article-panier oswald-bold">59€</p>
+                            </div>
+                            <div class="description-bottom">
+                                <p class="option-article">Voir le détail</p>
+                                <p class="option-article option-supprimer">Supprimer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-3 col-md-offset-7">
+                <div class="prix-panier-container">
+                    <ul class="prix-panier">
+                        <li>Total de vos achat <span class="li-span-tarif">138€</span></li>
+                        <li>Frais de livraison <span class="li-span-tarif">8€</span></li>
+                        <li>Montal total ttc <span class="li-span-tarif">146€</span></li>
+                    </ul>
+
+
+                    <a href="{{ path_for('orders_measures') }}" class="btn-rose btn-block">Valider mon panier</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

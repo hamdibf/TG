@@ -1,0 +1,94 @@
+{% extends "assets/layout.twig" %}
+
+{% block content %}
+
+    {% include "orders/partials/navigation.twig" %}
+
+    <!--  RECAP  -->
+    <div class="container">
+        <div class="row">
+            <!-- COORDONNEES  -->
+            <div class="col-xs-12 col-sm-6">
+                <div class="methode-mesure methode-medium">
+                    <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Vos coordonnées</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6" style="text-align: left;">
+                            <p class="titre-coordonnee-recap oswald-regular">De facturation</p>
+                            <ul class="ul-recap">
+                                <li>Benjamin</li>
+                                <li>Van Bockstaël</li>
+                                <li>26 rue friant</li>
+                                <li>75014</li>
+                                <li>Paris</li>
+                                <li>0650725219</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6" style="text-align: left;">
+                            <p class="titre-coordonnee-recap oswald-regular">De livraison</p>
+                            <ul class="ul-recap">
+                                <li>Benjamin</li>
+                                <li>Van Bockstaël</li>
+                                <li>26 rue friant</li>
+                                <li>75014</li>
+                                <li>Paris</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="methode-mesure methode-medium">
+                    <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Vos mesures</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6" style="text-align: left;">
+                            <ul class="ul-recap">
+                                <li><span class="oswald-regular">Poids :</span> 75 kg</li>
+                                <li><span class="oswald-regular">Taille :</span> 175 cm</li>
+                                <li><span class="oswald-regular">Age :</span> 27 ans</li>
+                                <li><span class="oswald-regular">Coupe :</span> Droite</li>
+                                <li><span class="oswald-regular">Cou :</span> 37 cm</li>
+                                <li><span class="oswald-regular">Poitrine :</span>98 cm</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6" style="text-align: left;">
+                            <ul class="ul-recap">
+                                <li><span class="oswald-regular">Carrure :</span> 45 cm</li>
+                                <li><span class="oswald-regular">Dos :</span> 70 cm</li>
+                                <li><span class="oswald-regular">Bras droit :</span> 64 cm</li>
+                                <li><span class="oswald-regular">Bras gauche :</span> 64 cm</li>
+                                <li><span class="oswald-regular">Poignets :</span> 19.5 cm</li>
+                                <li><span class="oswald-regular">Ceinture :</span> 98 cm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-3 col-md-offset-9">
+                <div class="prix-panier-container">
+                    <ul class="prix-panier">
+                        <li>Total de vos achat <span class="li-span-tarif">138€</span></li>
+                        <li>Frais de livraison <span class="li-span-tarif">8€</span></li>
+                        <li>Montal total ttc <span class="li-span-tarif">146€</span></li>
+                    </ul>
+                    <a id="trigger_stripe_payment" class="btn-rose btn-block">Passer au paiement</a>
+                    <form action="/your-server-side-code" method="POST" id="stripe_payment" style="display: none">
+                        <script
+                                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="pk_test_DFUJqhHq1oW52AzOOrUsF7hS"
+                                data-amount="999"
+                                data-name="TailorGeorge"
+                                data-description="Chemises sur mesure"
+                                data-image="/img/pictos/col_CLA.svg"
+                                data-locale="auto"
+                                data-zip-code="true"
+                                data-currency="eur">
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

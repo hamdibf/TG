@@ -1,0 +1,39 @@
+{% spaceless %}
+{% autoescape %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Tailorgeorge</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+
+    <body>
+
+    {% include "assets/partials/delivery.twig" %}
+
+    {% include "assets/partials/navigation.twig" %}
+
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <!-- JAVASCRIPT -->
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/assets/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+
+    </body>
+
+</html>
+{% endautoescape %}
+{% endspaceless %}

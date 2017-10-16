@@ -1,0 +1,50 @@
+<header>
+    <div class="name">Broderies</div>
+    <div class="close">x</div>
+</header>
+
+<h2 class="first">
+    Ajouter un monogramme
+</h2>
+
+
+<form action="">
+    <input type="text" name="" id="">
+    <button type="submit">OK</button>
+</form>
+
+
+<h2 class="first">
+    Couleur
+</h2>
+
+<div class="parts">
+    {% for id in 1..21 %}
+        <div class="part " data-category="color" data-id="{{ id[1] }}" data-label="{{ id[0] }}">
+            <div class="img">
+                <img src="/img/pictos/couleur {{ id }}.svg" width="85">
+            </div>
+            <!--<div class="name">{{ id[0] }}</div>-->
+        </div>
+    {% endfor %}
+</div>
+
+<h2 class="first">
+    Style
+</h2>
+
+<div class="parts">
+    <div class="part " data-category="style" data-id="{{ id[1] }}" data-label="{{ id[0] }}">
+        <div class="img">
+            <img src="/img/pictos/style serif-01.svg" width="85">
+        </div>
+        <!--<div class="name">{{ id[0] }}</div>-->
+    </div>
+    <div class="part " data-category="style" data-id="{{ id[1] }}" data-label="{{ id[0] }}">
+        <div class="img">
+            <img src="/img/pictos/style serif-02.svg" width="85">
+        </div>
+        <!--<div class="name">{{ id[0] }}</div>-->
+    </div>
+</div>
+

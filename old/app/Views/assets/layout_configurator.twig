@@ -1,0 +1,27 @@
+{% spaceless %}
+{% autoescape %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Tailorgeorge</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Crimson+Text" rel="stylesheet"/>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+
+    <noscript>Vous devez avoir le javascript d'activé pour utiliser cette page</noscript>
+    {% block content %}
+
+    {% endblock content %}
+
+    </body>
+    <script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
+    <script src="/js/min/all.js"></script>
+</html>
+{% endautoescape %}
+{% endspaceless %}
