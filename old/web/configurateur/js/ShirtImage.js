@@ -104,7 +104,7 @@ class ShirtImage extends Shirt {
         console.log(category);
         document
             .querySelector(`.summary-${category} img`)
-            .src = (!image) ? `/img/pictos/${this._translate[category]}_${this[category]}.${extension}` : image;
+            .src = (!image) ? `img/pictos/${this._translate[category]}_${this[category]}.${extension}` : image;
 
         document
             .querySelector(`.summary-${category} .name`)
