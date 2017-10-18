@@ -232,7 +232,10 @@
                         </div>
                     </form>
                     <strong id="fabric-number"><span></span> tissus</strong>
-                    <section id="fabrics-container"></section>
+                    <section id="fabrics-container">
+
+                        
+                    </section>
 
                 </section>
                 <section class="hidden step" id="step-2">

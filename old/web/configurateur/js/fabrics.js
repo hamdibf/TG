@@ -2,7 +2,8 @@
 
 
 function changeFabric(body){
-    fetch('/findAll', {
+
+    fetch('http://mtmconcept.com/api/BT104/a89f1f0ddb07be6a6b0af007ebfc4a95/tissus', {
         method: 'POST',
         body: body
     })
@@ -45,8 +46,8 @@ document
 
 // INIT
 var f = new FormData();
-f.append('couleur','tous');
-f.append('motif','tous');
-f.append('tissage','tous');
+f.append('couleur','all');
+f.append('motif','all');
+f.append('tissage','all');
 
 changeFabric(f);

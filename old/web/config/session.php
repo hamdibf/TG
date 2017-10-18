@@ -1,5 +1,7 @@
-﻿<?php
-//session_start();
+<?php
+if(!isset($_SESSION)){
+    session_start();
+}
 require_once('config.php');
 
 class TgSession
