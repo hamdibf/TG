@@ -232,10 +232,7 @@
                         </div>
                     </form>
                     <strong id="fabric-number"><span></span> tissus</strong>
-                    <section id="fabrics-container">
-
-                        
-                    </section>
+                    <section id="fabrics-container"></section>
 
                 </section>
                 <section class="hidden step" id="step-2">
@@ -652,89 +649,196 @@
                         <div class="name">Boutons</div>
                         <div class="close">x</div>
                     </header>
+                    <h2 class="first">Boutons</h2>
                     <div class="parts">
                         <div class="part active" data-category="buttons" data-id="anthracite" data-label="Anthracite">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_anthracite.png" width="85"></div>
                             <div class="name">Anthracite</div>
                                 
                         </div>
+                        <div class="part" data-category="buttons" data-id="blanc" data-label="Blanc">
+                            <div class="img"><img src="img/pictos/boutons_blanc.png" width="85"></div>
+                            <div class="name">Blanc</div>
+                                
+                        </div>
                         <div class="part" data-category="buttons" data-id="blanc_epais" data-label="Blanc épais">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_blanc_epais.png" width="85"></div>
                             <div class="name">Blanc épais</div>
                                 
                         </div>
-                        <div class="part" data-category="buttons" data-id="bleu" data-label="Bleu">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
-                            <div class="name">Bleu</div>
-                                
-                        </div>
                         <div class="part" data-category="buttons" data-id="bleu_ciel" data-label="Bleu ciel">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_bleu_ciel.png" width="85"></div>
                             <div class="name">Bleu ciel</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="bleu_fonce" data-label="Bleu fonce">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
-                            <div class="name">Bleu fonce</div>
+                            <div class="img"><img src="img/pictos/boutons_bleu_fonce.png" width="85"></div>
+                            <div class="name">Bleu foncé</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="bleu_gris" data-label="Bleu gris">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_bleu_gris.png" width="85"></div>
                             <div class="name">Bleu gris</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="brun_epais" data-label="Brun épais">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_brun_epais.png" width="85"></div>
                             <div class="name">Brun épais</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="corne_clair" data-label="Corne clair">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_corne_clair.png" width="85"></div>
                             <div class="name">Corne clair</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="corne_fonce" data-label="Corne_ fonce">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
-                            <div class="name">Corne_ fonce</div>
+                            <div class="img"><img src="img/pictos/boutons_corne_fonce.png" width="85"></div>
+                            <div class="name">Corne foncé</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="jaune" data-label="Jaune">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_jaune.png" width="85"></div>
                             <div class="name">Jaune</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="nacre" data-label="Nacre">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_nacre.png" width="85"></div>
                             <div class="name">Nacre</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="noir" data-label="Noir">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_noir.png" width="85"></div>
                             <div class="name">Noir</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="noir_epais" data-label="Noir épais">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_noir_epais.png" width="85"></div>
                             <div class="name">Noir épais</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="rouge" data-label="Rouge">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_rouge.png" width="85"></div>
                             <div class="name">Rouge</div>
                                 
                         </div>
-                        <div class="part" data-category="buttons" data-id="standard" data-label="Standard">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
-                            <div class="name">Standard</div>
+                        <div class="part" data-category="buttons" data-id="ton_sur_ton" data-label="Ton_sur_ton">
+                            <div class="img"><img src="img/pictos/boutons_ton_sur_ton.png" width="85"></div>
+                            <div class="name">Ton sur ton</div>
                                 
                         </div>
                         <div class="part" data-category="buttons" data-id="vert" data-label="Vert">
-                            <div class="img"><img src="img/icons/boutons.png" width="85"></div>
+                            <div class="img"><img src="img/pictos/boutons_vert.png" width="85"></div>
                             <div class="name">Vert</div>
                                 
                         </div>
                             
                     </div>
+                    <header>
+                        <div class="name">Boutonnière</div>
+                        <div class="close">x</div>
+                    </header>
+                    <h2 class="first">Boutonnière</h2>
+                    <div class="parts">
+                        <div class="part active" data-category="buttonholes" data-id="beige" data-label="Beige">
+                            <div class="img"><img src="img/pictos/boutonnieres_beige.svg" width="30"></div>
+                            <div class="name">Beige</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="blanc_mat" data-label="Blanc_mat">
+                            <div class="img"><img src="img/pictos/boutonnieres_blanc_mat.svg" width="30"></div>
+                            <div class="name">Blanc mat</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="bleu_clair" data-label="Bleu_clair">
+                            <div class="img"><img src="img/pictos/boutonnieres_bleu_clair.svg" width="30"></div>
+                            <div class="name">Bleu clair</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="bleu_marine" data-label="Bleu_marine">
+                            <div class="img"><img src="img/pictos/boutonnieres_bleu_marine.svg" width="30"></div>
+                            <div class="name">Bleu marine</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="bleu_roi" data-label="Bleu_roi">
+                            <div class="img"><img src="img/pictos/boutonnieres_bleu_roi.svg" width="30"></div>
+                            <div class="name">Bleu roi</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="bordeaux" data-label="Bordeaux">
+                            <div class="img"><img src="img/pictos/boutonnieres_bordeaux.svg" width="30"></div>
+                            <div class="name">Bordeaux</div>
+                                
+                        </div>
+                        <div class="part active" data-category="buttonholes" data-id="gris" data-label="Gris">
+                            <div class="img"><img src="img/pictos/boutonnieres_gris.svg" width="30"></div>
+                            <div class="name">Gris</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="jaune_pale" data-label="Jaune_pale">
+                            <div class="img"><img src="img/pictos/boutonnieres_jaune_pale.svg" width="30"></div>
+                            <div class="name">Jaune pale</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="jaune_vif" data-label="Jaune_vif">
+                            <div class="img"><img src="img/pictos/boutonnieres_jaune_vif.svg" width="30"></div>
+                            <div class="name">Jaune vif</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="mauve" data-label="Mauve">
+                            <div class="img"><img src="img/pictos/boutonnieres_mauve.svg" width="30"></div>
+                            <div class="name">Mauve</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="noir" data-label="Noir">
+                            <div class="img"><img src="img/pictos/boutonnieres_noir.svg" width="30"></div>
+                            <div class="name">Noir</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="orange" data-label="Orange">
+                            <div class="img"><img src="img/pictos/boutonnieres_orange.svg" width="30"></div>
+                            <div class="name">Orange</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="rose_pale" data-label="Rose_pale">
+                            <div class="img"><img src="img/pictos/boutonnieres_rose_pale.svg" width="30"></div>
+                            <div class="name">Rose pale</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="rose_vif" data-label="Rose_vif">
+                            <div class="img"><img src="img/pictos/boutonnieres_rose_vif.svg" width="30"></div>
+                            <div class="name">Rose vif</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="rouge" data-label="Rouge">
+                            <div class="img"><img src="img/pictos/boutonnieres_rouge.svg" width="30"></div>
+                            <div class="name">Rouge</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="ton_sur_ton" data-label="Ton_sur_ton">
+                            <div class="img"><img src="img/pictos/boutonnieres_ton_sur_ton.svg" width="30"></div>
+                            <div class="name">Ton sur ton</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="vert_fonce" data-label="Vert_fonce">
+                            <div class="img"><img src="img/pictos/boutonnieres_vert_fonce.svg" width="30"></div>
+                            <div class="name">Vert fonce</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="vert_pomme" data-label="Vert_pomme">
+                            <div class="img"><img src="img/pictos/boutonnieres_vert_pomme.svg" width="30"></div>
+                            <div class="name">Vert pomme</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="vert_vif" data-label="Vert_vif">
+                            <div class="img"><img src="img/pictos/boutonnieres_vert_vif.svg" width="30"></div>
+                            <div class="name">Vert vif</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttonholes" data-id="violet" data-label="Violet">
+                            <div class="img"><img src="img/pictos/boutonnieres_violet.svg" width="30"></div>
+                            <div class="name">Violet</div>
+                                
+                        </div>
                 </section>
                 <section class="hidden step" id="step-8">
                     <header>
@@ -748,7 +852,63 @@
                         <div class="name">Doublures</div>
                         <div class="close">x</div>
                     </header>
-                    <p>doublures</p>
+<!--                    <p>doublures</p>-->
+                    <h2 class="first">Doublure col</h2>
+                    <div class="parts">
+                        <div class="part active" data-category="doublure" data-id="anthracite" data-label="Anthracite">
+                            <div class="img"><img src="img/pictos/Doublure_poignets/Doublure_poignets-01.png" width="85"></div>
+                            <div class="name">Col classique</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttons" data-id="blanc" data-label="Blanc">
+                            <div class="img"><img src="img/pictos/Doublure_poignets/Doublure_poignets-02.png" width="85"></div>
+                            <div class="name">Col blanc</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttons" data-id="blanc_epais" data-label="Blanc épais">
+                            <div class="img"><img src="img/pictos/Doublure_poignets/Doublure_poignets-03.png" width="85"></div>
+                            <div class="name">Ext. pied col</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttons" data-id="bleu_ciel" data-label="Bleu ciel">
+                            <div class="img"><img src="img/pictos/Doublure_poignets/Doublure_poignets-04.png" width="85"></div>
+                            <div class="name">Int. pied col</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttons" data-id="bleu_fonce" data-label="Bleu fonce">
+                            <div class="img"><img src="img/pictos/Doublure_poignets/Doublure_poignets-05.png" width="85"></div>
+                            <div class="name">Full pied col</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttons" data-id="bleu_fonce" data-label="Bleu fonce">
+                            <div class="img"><img src="img/pictos/Doublure_poignets/Doublure_poignets-06.png" width="85"></div>
+                            <div class="name">Full col</div>
+                                
+                        </div>
+                    </div>
+                    <h2 class="first">Doublure poignets</h2>
+                    <div class="parts">
+                        <div class="part active" data-category="buttons" data-id="bleu_gris" data-label="Bleu gris">
+                            <div class="img"><img src="img/pictos/Doublure_poignets/Doublure_poignets-07.png" width="85"></div>
+                            <div class="name">Poignets classiques</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttons" data-id="brun_epais" data-label="Brun épais">
+                            <div class="img"><img src="img/pictos/Doublure_poignets/Doublure_poignets-08.png" width="85"></div>
+                            <div class="name">Poignets blancs</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttons" data-id="brun_epais" data-label="Brun épais">
+                            <div class="img"><img src="img/pictos/Doublure_poignets/Doublure_poignets-09.png" width="85"></div>
+                            <div class="name">Int. poignets</div>
+                                
+                        </div>
+                        <div class="part" data-category="buttons" data-id="corne_clair" data-label="Corne clair">
+                            <div class="img"><img src="img/pictos/Doublure_poignets/Doublure_poignets-10.png" width="85"></div>
+                            <div class="name">Full poignets</div>
+                                
+                        </div>
+                    </div>
                 </section>
             </div>
             <footer>
