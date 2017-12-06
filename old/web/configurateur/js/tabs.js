@@ -20,7 +20,7 @@ function isMobile(e) {
     'poches-hover.png',
     'poignets-hover.png',
     'tissus-hover.png'
-].forEach(v => new Image().src = `/img/icons/${v}`);
+].forEach(v => new Image().src = `img/icons/${v}`);
 
 document.querySelector('button.back').addEventListener('click', e => {
     document.querySelectorAll('.step').forEach(v => v.classList.add('hidden'));
@@ -35,7 +35,7 @@ document.querySelectorAll('#configurator nav li, #step-0 .part').forEach(v => {
     v.addEventListener('click', _ => {
 
         dataId = parseInt(v.getAttribute('data-id'));
-
+        console.log(dataId);
 
         document.querySelector('nav').classList.remove('hidden');
         document.querySelector('button.back').classList.remove('hidden');

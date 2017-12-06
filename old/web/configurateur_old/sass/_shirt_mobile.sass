@@ -1,0 +1,60 @@
+@media all and (max-width: $breakSize)
+  section#shirt
+    width: 100%
+    justify-content: flex-start
+    height: calc(100vh - 100px)
+
+    header
+      display: flex
+      height: 70px
+
+      .menu
+        margin-left: 10px
+
+      .logo
+        font-family: 'Crimson Text', serif
+        color: $font
+        +font-size(24)
+        position: absolute
+        top: 15px
+        left: 40px
+
+      .delivery
+        color: $font
+        +oswald()
+        font-weight: 100
+        +font-size(15)
+        position: fixed
+        right: 70px
+        top: 40px
+
+      .price
+        color: $font
+        +oswald()
+        +font-size(23)
+        font-weight: 100
+        position: fixed
+        right: 70px
+        top: 10px
+
+      button.buy
+        width: 50px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        border: none
+        border-radius: 5px
+        +button($active)
+        position: absolute
+        right: 10px
+        top: 10px
+
+    footer
+      display: none
+
+    #shirt-container
+      img, &.img-fabric img, &.img-collar img, &.img-wrists img, &.img-pockets img, &.img-bottom img, &.img-buttons img, &.img-back img, &.img-embroidery img, &.img-lining img
+        width: 200%
+        left: -45%
+        top: 0

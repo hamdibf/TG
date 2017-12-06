@@ -1,0 +1,201 @@
+section#configurator
+  height: 100vh
+  width: 40%
+  display: flex
+  background: $configuratorBgk
+  flex-direction: column
+  position: relative
+
+  header
+    display: none
+
+  h2
+    +oswald()
+    +font-size(15)
+    font-weight: normal
+    &.first
+      margin-top: 50px
+
+  .content
+    width: 100%
+    height: calc(100% - 150px)
+    margin: auto
+    margin-top: 15px
+    overflow: auto
+    padding: 0 20%
+
+  #step-0
+    .part img
+      width: 85px
+
+    .summary-fabric img
+      width: 105px
+
+
+  .hidden
+    display: none
+
+  button.back
+    +button($button)
+    width: 35px
+    height: 35px
+    border-radius: 50%
+    position: absolute
+    left: -17px
+    top: 25px
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+    img
+      padding-right: 3px
+      padding-top: 3px
+
+  nav
+    width: 100%
+    height: 75px
+    flex-shrink: 0
+
+    ul
+      padding-left: 30px
+      padding-right: 10px
+      height: 75px
+      width: 100%
+      list-style: none
+      display: flex
+      justify-content: space-around
+      border-bottom: 2px solid $menuItemBorder
+
+      li
+        text-align: center
+        align-items: center
+        cursor: pointer
+        height: 75px
+        text-transform: uppercase
+        +font-size(10)
+        border-bottom: 2px solid transparent
+        width: 60px
+        transition: border 0.3s
+        padding-top: 10px
+        +DINPROMedium()
+        font-weight: bold
+
+
+        &.active, &:hover
+          border-bottom-color: $menuItemBorderActive
+          color: $active
+
+          &.item-1 .img
+            background: url('../img/icons/tissus-hover.png') no-repeat center center
+
+          &.item-2 .img
+            background: url('../img/icons/cols-hover.png') no-repeat center center
+
+          &.item-3 .img
+            background: url('../img/icons/poignets-hover.png') no-repeat center center
+
+          &.item-4 .img
+            background: url('../img/icons/poches-hover.png') no-repeat center center
+
+          &.item-5 .img
+            background: url('../img/icons/bas-hover.png') no-repeat center center
+
+          &.item-6 .img
+            background: url('../img/icons/dos-hover.png') no-repeat center center
+
+          &.item-7 .img
+            background: url('../img/icons/boutons-hover.png') no-repeat center center
+
+          &.item-8 .img
+            background: url('../img/icons/broderies-hover.png') no-repeat center center
+
+          &.item-9 .img
+            background: url('../img/icons/doublures-hover.png') no-repeat center center
+
+
+        &.item-1 .img
+          background: url('../img/icons/tissus.png') no-repeat center center
+
+        &.item-2 .img
+          background: url('../img/icons/cols.png') no-repeat center center
+
+        &.item-3 .img
+          background: url('../img/icons/poignets.png') no-repeat center center
+
+        &.item-4 .img
+          background: url('../img/icons/poches.png') no-repeat center center
+
+        &.item-5 .img
+          background: url('../img/icons/bas.png') no-repeat center center
+
+        &.item-6 .img
+          background: url('../img/icons/dos.png') no-repeat center center
+
+        &.item-7 .img
+          background: url('../img/icons/boutons.png') no-repeat center center
+
+        &.item-8 .img
+          background: url('../img/icons/broderies.png') no-repeat center center
+
+        &.item-9 .img
+          background: url('../img/icons/doublures.png') no-repeat center center
+
+        .img
+          display: flex
+          height: 30px
+          margin-bottom: 5px
+
+  .parts
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  .part
+    width: 110px
+    text-align: center
+    margin: 0 10px 20px 0
+
+    .img
+      width: 110px
+      height: 110px
+      border: 1px dashed $partBorder
+      display: flex
+      align-items: center
+      justify-content: center
+      line-height: 110px
+      cursor: pointer
+      margin-bottom: 10px
+
+      img
+        opacity: 0.2
+        transition: opacity 0.3s
+
+    &:hover
+      img
+        opacity: 1
+
+    &.active
+      .img
+        border: 1px solid $partBorderActive
+        img
+         opacity: 1
+      .name
+        color: $partBorderActive
+
+
+  footer
+    display: flex
+    flex-shrink: 0
+    height: 75px
+    align-items: center
+    justify-content: center
+    border-top: 2px solid $menuItemBorder
+
+    button
+      +button($button)
+      color: white
+      width: 50%
+      height: 70%
+      +DINPROMedium()
+      +font-size(17)
+      text-transform: uppercase

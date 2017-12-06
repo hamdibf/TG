@@ -10,8 +10,6 @@ function fermerInfo() {
     info.classList.toggle("fermer-info");
 }
 
-
-
 function openLiensguide() {
     liensguide.classList.toggle("open-guide");
 }
@@ -19,8 +17,8 @@ function openLiensguide() {
 function openMenulateral() 
 {
 	//$(".menu-lateral-container").show( "slow", function() {});
-    mlc.classList.toggle("mlc-open");
-    ml.classList.toggle("ml-open");
+    mlc.classList.add("mlc-open");
+    ml.classList.add("ml-open");
 }
 
 function activLabel(el) {

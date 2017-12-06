@@ -4,32 +4,45 @@
     <div class="row">
         <div class="col-xs-12">
             <!-- FORMULAIRE MESURE RAPIDE -->
-            <form action="nouveau-compte.html" method="POST">
+            <form action="inscription-adresse.html" method="POST">
+                <input type="hidden" name="typeMesure" value="mesure-rapide" >
                 <!-- AGE / TAILLE / POIDS -->
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="methode-mesure methode-small">
-                           <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Aide au calibrage</h2>
+                            <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Aide au calibrage</h2>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-4">
                                     <!-- AGE -->
                                     <div class="input-group">
                                         <label class="label" for="age">Age</label>
-                                        <input class="input" type="text" name="age" id="age" onfocus="activLabel(this)" onblur="activLabel(this)" required value="<?php echo $mesures['age']; ?>">
+                                        <input class="input" type="text" name="age" id="age" onfocus="activLabel(this)" onblur="activLabel(this)" required value="<?php
+                                        if (!empty($mesures['age'])) {
+                                            echo $mesures['age'];
+                                        }
+                                        ?>">
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-4">
-                                   <!-- TAILLE -->
+                                    <!-- TAILLE -->
                                     <div class="input-group">
                                         <label class="label" for="taille">Taille (cm)</label>
-                                        <input class="input" type="text" name="taille" id="taille" onfocus="activLabel(this)" onblur="activLabel(this)" required value="<?php echo $mesures['taille']; ?>">
+                                        <input class="input" type="text" name="taille" id="taille" onfocus="activLabel(this)" onblur="activLabel(this)" required value="<?php
+                                        if (!empty($mesures['taille'])) {
+                                            echo $mesures['taille'];
+                                        }
+                                        ?>">
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-4">
-                                   <!-- POIDS -->
+                                    <!-- POIDS -->
                                     <div class="input-group no-margin-bottom">
                                         <label class="label" for="poids">Poids (kg)</label>
-                                        <input class="input" type="text" name="poids" id="poids" onfocus="activLabel(this)" onblur="activLabel(this)" required value="<?php echo $mesures['poids']; ?>">
+                                        <input class="input" type="text" name="poids" id="poids" onfocus="activLabel(this)" onblur="activLabel(this)" required value="<?php
+                                        if (!empty($mesures['poids'])) {
+                                            echo $mesures['poids'];
+                                        }
+                                        ?>">
                                     </div>
                                 </div>
                             </div>
@@ -43,18 +56,66 @@
                             <h2 class="methode-titre oswald-regular" style="margin-bottom: 20px;">Choisissez votre taille de chemise</h2>
                             <div class="methode-mesure-img mesure-rapide-taille"></div>
                             <select class="select-mesure" name="mesure-rapide-taille" id="mesure-rapide-taille" required>
-                                <option value="XS" <?php if($mesures["mesure_rapide_taille"]=="XS") { echo 'selected'; } ?>>37 - (XS) - 14,5</option>
-                                <option value="S" <?php if($mesures["mesure_rapide_taille"]=="S") { echo 'selected'; } ?>>38 - (S) - 14,5</option>
-                                <option value="S+" <?php if($mesures["mesure_rapide_taille"]=="S+") { echo 'selected'; } ?>>39 - (S+) - 14,5</option>
-                                <option value="M" <?php if($mesures["mesure_rapide_taille"]=="M") { echo 'selected'; } ?>>40 - (M) - 14,5</option>
-                                <option value="M+" <?php if($mesures["mesure_rapide_taille"]=="M+") { echo 'selected'; } ?>>41 - (M+) - 14,5</option>
-                                <option value="L" <?php if($mesures["mesure_rapide_taille"]=="L") { echo 'selected'; } ?>>42 - (L) - 14,5</option>
-                                <option value="L+" <?php if($mesures["mesure_rapide_taille"]=="L+") { echo 'selected'; } ?>>43 - (L+) - 14,5</option>
-                                <option value="XL" <?php if($mesures["mesure_rapide_taille"]=="XL") { echo 'selected'; } ?>>44 - (XL) - 14,5</option>
-                                <option value="XL+" <?php if($mesures["mesure_rapide_taille"]=="XL+") { echo 'selected'; } ?>>45 - (XL+) - 14,5</option>
-                                <option value="XXL" <?php if($mesures["mesure_rapide_taille"]=="XXL") { echo 'selected'; } ?>>46 - (XXL) - 14,5</option>
-                                <option value="XXL+" <?php if($mesures["mesure_rapide_taille"]=="XXL+") { echo 'selected'; } ?>>47 - (XXL+) - 14,5</option>
-                                <option value="XXXl" <?php if($mesures["mesure_rapide_taille"]=="XXXl") { echo 'selected'; } ?>>48 - (XXXL) - 14,5</option>
+                                <option value="XS" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "XS") {
+                                    echo 'selected';
+                                }
+                                ?>>37 - (XS) - 14,5</option>
+                                <option value="S" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "S") {
+                                    echo 'selected';
+                                }
+                                ?>>38 - (S) - 14,5</option>
+                                <option value="S+" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "S+") {
+                                    echo 'selected';
+                                }
+                                ?>>39 - (S+) - 14,5</option>
+                                <option value="M" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "M") {
+                                    echo 'selected';
+                                }
+                                ?>>40 - (M) - 14,5</option>
+                                <option value="M+" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "M+") {
+                                    echo 'selected';
+                                }
+                                ?>>41 - (M+) - 14,5</option>
+                                <option value="L" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "L") {
+                                    echo 'selected';
+                                }
+                                ?>>42 - (L) - 14,5</option>
+                                <option value="L+" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "L+") {
+                                    echo 'selected';
+                                }
+                                ?>>43 - (L+) - 14,5</option>
+                                <option value="XL" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "XL") {
+                                    echo 'selected';
+                                }
+                                ?>>44 - (XL) - 14,5</option>
+                                <option value="XL+" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "XL+") {
+                                    echo 'selected';
+                                }
+                                ?>>45 - (XL+) - 14,5</option>
+                                <option value="XXL" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "XXL") {
+                                    echo 'selected';
+                                }
+                                ?>>46 - (XXL) - 14,5</option>
+                                <option value="XXL+" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "XXL+") {
+                                    echo 'selected';
+                                }
+                                ?>>47 - (XXL+) - 14,5</option>
+                                <option value="XXXl" <?php
+                                if (!empty($mesures['mesure_rapide_taille']) && $mesures["mesure_rapide_taille"] == "XXXl") {
+                                    echo 'selected';
+                                }
+                                ?>>48 - (XXXL) - 14,5</option>
                             </select>
                             <p class="mesure-conseil">(Choisissez la taille qui vous va le mieux au niveau du corps)</p>
                         </div>

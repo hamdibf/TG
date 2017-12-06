@@ -1,0 +1,60 @@
+#fabric-number
+  display: block
+  width: 100%
+  +font-size(15)
+  font-weight: 400
+  margin: 25px 0
+
+#fabrics-container
+  +oswald()
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: center
+
+  .fabric
+    display: inline-block
+    cursor: pointer
+    background: white
+
+    border: 2px solid $configuratorBgk
+    margin-bottom: 20px
+
+    &:hover, &.active
+      background: $active
+      border-color: $active
+      color: white
+
+      .text .price
+        color: white
+
+      .text
+        border-color: transparent
+
+    img
+      display: block
+
+    .text
+      border: 1px solid $menuItemBorder
+      border-top: none
+      padding: 5px 5px 0 5px
+
+      .name
+        +DINPROLight()
+        +font-size(13)
+
+      .price
+        color: $active
+        font-weight: bold
+        float: right
+
+      .desc
+        padding-bottom: 5px
+        max-width: 130px
+        +DINPROLight()
+        display: block
+        +font-size(10)
+
+@media all and (max-width: $breakSize)
+  #fabrics-container
+    justify-content: space-around

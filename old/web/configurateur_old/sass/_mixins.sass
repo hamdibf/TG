@@ -1,0 +1,27 @@
+=oswald()
+  font-family: 'Oswald', sans-serif
+
+=DINPROLight()
+  font-family: 'DINPRO Light', sans-serif
+
+=DINPROMedium()
+  font-family: 'DINPRO Medium', sans-serif
+
+=font-size($sizeValue: 16)
+  font-size: $sizeValue  + px
+  font-size: ($sizeValue / 10) + rem
+
+
+=button($background)
+  padding: 0
+  margin: 0
+  background: $background
+  border: none
+  border-radius: 3px
+  transition: background 0.3s
+  outline: none
+  &:hover
+    background: darken($background, 10)
+  &:active
+    background: darken($background, 30)
+

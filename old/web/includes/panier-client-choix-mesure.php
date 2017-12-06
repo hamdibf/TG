@@ -1,10 +1,10 @@
 <!-- CHOIX TYPE DE MESURE -->
 <div class="container">
-   <div class="row">
-       <div class="col-xs-12">
-           <p class="choix-methode-mesure">Utilisez une des 3 méthodes proposées pour prendre vos mesures</p>
-       </div>
-   </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="choix-methode-mesure">Utilisez une des 3 méthodes proposées pour prendre vos mesures</p>
+        </div>
+    </div>
     <div class="row">
         <div class="col-xs-12 col-sm-4">
             <div class="methode-mesure">

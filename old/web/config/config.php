@@ -6,8 +6,8 @@
 
 if (!defined('CONFIG_DB_HOSTNAME')) { define("CONFIG_DB_HOSTNAME", 'localhost'); } 
 if (!defined('CONFIG_DB_NAME')) { define("CONFIG_DB_NAME", "achra120785"); } 
-if (!defined('CONFIG_DB_USER')) { define("CONFIG_DB_USER", "hamdibf"); } 
-if (!defined('CONFIG_DB_PW')) { define("CONFIG_DB_PW", "010519830"); } 
+if (!defined('CONFIG_DB_USER')) { define("CONFIG_DB_USER", "root"); } 
+if (!defined('CONFIG_DB_PW')) { define("CONFIG_DB_PW", ""); } 
 
 try
 {
